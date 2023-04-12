@@ -12,6 +12,7 @@ dt = 0
 player_pos: pygame.Vector2 = pygame.Vector2(
     screen.get_width() / 2, screen.get_height() / 2
 )
+status_text: pygame.font.Font = pygame.font.Font(None, 32)
 
 while running:
     # poll for events
@@ -47,6 +48,13 @@ while running:
         player_pos.y = 0
     if player_pos.y > height:
         player_pos.y = height
+
+    # Update status text.
+    text_surf: pygame.Surface = status_text.render(
+        f"({round(player_pos.x, 1)}, {round(player_pos.y, 1)})", True, "black"
+    )
+    text_rect: pygame.Rect = text_surf.get_rect()
+    screen.blit(text_surf, (width - text_rect.width - 10, height - text_rect.height))
 
     # flip() the display to put your work on screen
     pygame.display.flip()
