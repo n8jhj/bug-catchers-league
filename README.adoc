@@ -6,7 +6,7 @@ This is a game where you go around catching bugs, in competition with your oppon
 
 * [x] Get a game loop running
 * [x] Create a movable player
-* [ ] Add bounds collision in a simple closed world
+* [x] Add bounds collision in a simple closed world
 
 == Ideas
 
