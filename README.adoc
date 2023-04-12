@@ -5,4 +5,25 @@ This is a game where you go around catching bugs, in competition with your oppon
 == Development TODO's
 
 * [ ] Get a game loop running
-* [ ] Create a player with bounds collision in a simple closed world
+* [ ] Create a movable player
+* [ ] Add bounds collision in a simple closed world
+
+== Ideas
+
+* Let's just start with butterflies.
+
+* Stats:
++
+[%autowidth]
+|===
+| Short notation | Meaning
+
+| SPD | speed
+| ATK | attack
+| DEF | defense
+| CAP | carrying capacity
+|===
+
+* Can have certain types of bugs that give the catcher special abilities.
+** Stats+ (SPD, ATK, DEF, CAP)
+** Shoot fire/other weapons
