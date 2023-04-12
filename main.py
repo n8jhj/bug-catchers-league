@@ -20,12 +20,14 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    # fill the screen with a color to wipe away anything from last frame
+    # Fill the screen with a color to wipe away anything from last frame.
     screen.fill("purple")
 
+    # Draw player.
     radius: float = 40
     pygame.draw.circle(screen, "red", player_pos, radius)
 
+    # Directional input.
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
         player_pos.y -= 300 * dt
