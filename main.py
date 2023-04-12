@@ -32,6 +32,16 @@ while running:
     if keys[pygame.K_d]:
         player_pos.x += 300 * dt
 
+    # Collision detection with the world.
+    if player_pos.x < 0:
+        player_pos.x = 0
+    if player_pos.x > width:
+        player_pos.x = width
+    if player_pos.y < 0:
+        player_pos.y = 0
+    if player_pos.y > height:
+        player_pos.y = height
+
     # flip() the display to put your work on screen
     pygame.display.flip()
 
