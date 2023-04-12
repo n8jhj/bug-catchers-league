@@ -40,14 +40,14 @@ while running:
         player_pos.x += 300 * dt
 
     # Collision detection with the world.
-    if player_pos.x < 0:
-        player_pos.x = 0
-    if player_pos.x > width:
-        player_pos.x = width
-    if player_pos.y < 0:
-        player_pos.y = 0
-    if player_pos.y > height:
-        player_pos.y = height
+    if player_pos.x - radius < 0:
+        player_pos.x = radius
+    if player_pos.x + radius > width:
+        player_pos.x = width - radius
+    if player_pos.y - radius < 0:
+        player_pos.y = radius
+    if player_pos.y + radius > height:
+        player_pos.y = height - radius
 
     # Update status text.
     text_surf: pygame.Surface = status_text.render(
