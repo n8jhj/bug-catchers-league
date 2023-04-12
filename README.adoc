@@ -1,0 +1,3 @@
+= Bug Catchers League
+
+This is a game where you go around catching bugs, in competition with your opponents!
