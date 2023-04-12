@@ -4,8 +4,8 @@ This is a game where you go around catching bugs, in competition with your oppon
 
 == Development TODO's
 
-* [ ] Get a game loop running
-* [ ] Create a movable player
+* [x] Get a game loop running
+* [x] Create a movable player
 * [ ] Add bounds collision in a simple closed world
 
 == Ideas
