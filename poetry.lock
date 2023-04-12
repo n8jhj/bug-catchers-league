@@ -76,6 +76,14 @@ docs = ["furo (>=2022.12.7)", "proselint (>=0.13)", "sphinx-autodoc-typehints (>
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest-cov (>=4)", "pytest-mock (>=3.10)", "pytest (>=7.2.2)"]
 
 [[package]]
+name = "pygame"
+version = "2.3.0"
+description = "Python Game Development"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -86,7 +94,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "e23d240a9fd6d12eb499a5340f256471607fd11bcc85d9771ac3949ff26c8371"
+content-hash = "20228e224d6a8fb63abb972dc249d2b9af7c845a4312cef0fc2336079ef95e50"
 
 [metadata.files]
 black = []
@@ -96,4 +104,5 @@ mypy-extensions = []
 packaging = []
 pathspec = []
 platformdirs = []
+pygame = []
 tomli = []
